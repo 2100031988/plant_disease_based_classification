@@ -1,0 +1,24 @@
+# Python environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Generated data, models and experiment results
+data/
+models/
+results/
+
+# Legacy analysis output directory
+outputs/
+
+# Temporary sparse checkout
+_pv_tmp/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local editor and operating-system files
+.DS_Store
+.vscode/
+.idea/
