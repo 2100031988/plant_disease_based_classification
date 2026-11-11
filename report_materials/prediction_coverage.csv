@@ -1,0 +1,11 @@
+file,rows,unique_paths,expected_test_paths,exact_test_path_match
+custom_cnn_test_predictions.csv,2349,2349,2349,True
+fusion_image_crop_test_predictions.csv,2349,2349,2349,True
+image_text_alignment_test_predictions.csv,2349,2349,2349,True
+logistic_regression_image_only_test_predictions.csv,2349,2349,2349,True
+numpy_cnn_from_scratch_test_predictions.csv,2349,2349,2349,True
+random_forest_deep_features_test_predictions.csv,2349,2349,2349,True
+random_forest_hand_crafted_test_predictions.csv,2349,2349,2349,True
+resnet18_fine_tuned_test_predictions.csv,2349,2349,2349,True
+svm_deep_features_test_predictions.csv,2349,2349,2349,True
+svm_hand_crafted_test_predictions.csv,2349,2349,2349,True

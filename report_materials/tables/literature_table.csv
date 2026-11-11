@@ -1,0 +1,11 @@
+year,reference,method,data,reported result,relevance to this project
+2016,Mohanty et al.,"AlexNet, GoogLeNet; scratch vs transfer learning","PlantVillage, 54,306 images, 38 classes",99.35 % accuracy (best); about 31 % on images from other sources,Baseline that this project extends; shows the lab-to-field drop
+2018,Ferentinos,Several CNN architectures,"87,848 images, 25 plants, 58 classes",99.53 % best success rate,"Larger class set, same lab-style data"
+2019,Too et al.,"Fine-tuned VGG16, Inception V4, ResNet 50/101/152, DenseNet-121","PlantVillage, 38 classes",99.75 % (DenseNet-121),Transfer learning; denser networks need fewer parameters
+2022,Andrew et al.,"Fine-tuned DenseNet-121, ResNet-50, VGG-16, Inception V4","PlantVillage, 38 classes",99.81 % (DenseNet-121),Shows that PlantVillage accuracy is saturated
+2020,Singh et al. (PlantDoc),Classification benchmarks on a new field dataset,"2,598 images, 13 species, 27 classes (internet images)",Training with PlantDoc improves accuracy by up to 31 %,First public non-laboratory dataset for this task
+2022,Noyan,Random forest on only 8 background pixels,PlantVillage,49.0 % accuracy vs 2.6 % by chance,Dataset bias: labels are predictable without the leaf
+2025,Salman et al.,ViT backbone + mixture of experts,"Train PlantVillage subset (200/class), test PlantDoc","68 % vs 48 % for ViT-Base, 41 % InceptionV3, 43 % EfficientNet",Transformers improve robustness to field images
+2025,Benabbas et al.,CNNs vs ViTs vs CLIP zero-shot,PlantVillage vs field images,CNNs weak under domain shift; ViTs better; CLIP works from text descriptions,Supports use of text descriptions
+2026,Nguyen Quoc et al. (LeafNet),"Vision-language models, VQA benchmark","186,000 images with expert metadata and descriptions",Healthy vs diseased above 90 %; pathogen and species below 65 %,Image + text + metadata dataset like ours
+2026,Truong et al. (TomaMMU),14 vision-language models; fine-tuning,Tomato leaf multimodal dataset,Fine-tuning raises hard multiple-choice accuracy to 96.09 %,"Multimodal benchmark for tomato, a crop in our data"

@@ -1,0 +1,13 @@
+test,result,detail
+"output shape (N, K)",PASS,"(5, 17)"
+softmax probabilities sum to 1,PASS,rows sum to 1
+numerical gradient check,PASS,max relative error 4.7e-10
+agreement with PyTorch (float64),PASS,max difference 6.7e-16
+same training trajectory as PyTorch,PASS,max loss difference 6.6e-04
+batch of one image,PASS,batch size 1 works
+odd image size rejected,PASS,odd feature-map size is rejected with ValueError
+invalid label rejected,PASS,label outside the class range raises IndexError
+stable with extreme logits,PASS,loss 0.0e+00 with logits of size 1e4
+overfits a tiny batch,PASS,loss on 16 images after 150 steps: 0.000
+determinism with a fixed seed,PASS,same seed gives identical loss
+trained weights are finite,PASS,no NaN or infinite weights after training

@@ -1,0 +1,29 @@
+criterion,report_pack_file,source_file,suggested_caption
+criterion_1,figures/criterion_1/class_distribution.png,results/dataset_analysis/class_distribution.png,Class counts reveal substantial imbalance across the 17 labels.
+criterion_1,figures/criterion_1/sample_per_class.png,results/dataset_analysis/sample_per_class.png,One representative PlantVillage image for each class.
+criterion_1,figures/criterion_1/colour_feature_boxplots.png,results/dataset_analysis/colour_feature_boxplots.png,Sampled colour-feature distributions by disease class.
+criterion_1,figures/criterion_1/split_check.png,results/dataset_analysis/split_check.png,"Class proportions across train, validation, and test splits."
+criterion_1,figures/criterion_1/multimodal_sample.png,results/dataset_analysis/multimodal_sample.png,Image paired with the project-authored class-level text and metadata.
+criterion_1,figures/criterion_1/text_vs_image_similarity.png,results/dataset_analysis/text_vs_image_similarity.png,Relationship between class-level text and colour-histogram similarity.
+criterion_2,figures/criterion_2/learning_curves.png,results/custom_cnn/learning_curves.png,Custom PyTorch CNN training and validation curves.
+criterion_2,figures/criterion_2/first_layer_filters.png,results/custom_cnn/first_layer_filters.png,Learned first-layer convolution filters.
+criterion_2,figures/criterion_2/feature_maps_block1.png,results/custom_cnn/feature_maps_block1.png,Example feature maps from the first convolution block.
+criterion_2,figures/criterion_2/handcrafted_features.png,results/custom_cnn/handcrafted_features.png,Illustration of the colour-histogram and HOG descriptors.
+criterion_2,figures/criterion_2/scratch_learning_curves.png,results/implementation/scratch_learning_curves.png,NumPy from-scratch CNN training curves at 32 x 32 input size.
+criterion_3,figures/criterion_3/timeline.png,results/literature_review/timeline.png,Selected milestones in CNN and plant-disease research.
+criterion_3,figures/criterion_3/lab_vs_field.png,results/literature_review/lab_vs_field.png,Illustration of controlled-dataset versus field generalization results.
+criterion_4,figures/criterion_4/benchmark_comparison.png,results/benchmarks/benchmark_comparison.png,Benchmark methods ranked by measured test performance.
+criterion_4,figures/criterion_4/per_class_f1.png,results/benchmarks/per_class_f1.png,Per-class F1 scores for benchmark models.
+criterion_4,figures/criterion_4/quality_vs_cost.png,results/benchmarks/quality_vs_cost.png,Measured quality and inference-cost comparison.
+criterion_4,figures/criterion_4/zero_shot.png,results/benchmarks/zero_shot.png,Zero-shot image-text benchmark result.
+criterion_5,figures/criterion_5/complexity_scaling.png,results/implementation/complexity_scaling.png,Measured runtime and memory scaling for the from-scratch implementation.
+criterion_5,figures/criterion_5/trajectory_check.png,results/implementation/trajectory_check.png,NumPy and PyTorch training-trajectory agreement check.
+criterion_5,figures/criterion_5/scratch_confusion_matrix.png,results/implementation/scratch_confusion_matrix.png,Confusion matrix for the 32 x 32 NumPy CNN demonstration.
+criterion_6,figures/criterion_6/confidence_intervals.png,results/analysis/confidence_intervals.png,Bootstrap confidence intervals for model performance.
+criterion_6,figures/criterion_6/planned_comparisons.png,results/analysis/planned_comparisons.png,Predefined paired comparisons with confidence intervals.
+criterion_6,figures/criterion_6/mcnemar_matrix.png,results/analysis/mcnemar_matrix.png,Pairwise McNemar comparison summary.
+criterion_6,figures/criterion_6/per_class_f1_heatmap.png,results/analysis/per_class_f1_heatmap.png,Per-class F1 across the evaluated models.
+criterion_6,figures/criterion_6/confusion_best_model.png,results/analysis/confusion_best_model.png,Confusion matrix for the top-ranked model.
+criterion_6,figures/criterion_6/error_types.png,results/analysis/error_types.png,Categorized prediction errors.
+criterion_6,figures/criterion_6/calibration_custom_cnn.png,results/analysis/calibration_custom_cnn.png,Custom CNN calibration and confidence distribution.
+criterion_6,figures/criterion_6/quality_vs_cost.png,results/analysis/quality_vs_cost.png,Results-analysis quality and inference-cost comparison.

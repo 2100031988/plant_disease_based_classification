@@ -1,0 +1,17 @@
+Best model by macro-F1: ResNet18 fine-tuned (macro-F1 0.988, 95% interval 0.984-0.993; accuracy 0.988; MCC 0.986).
+Cochran's Q test: the models differ significantly (p = 0).
+39 of 45 pairwise differences are significant after Holm correction.
+The two best models (ResNet18 fine-tuned and SVM deep-features) are significantly different (Holm-adjusted p = 0.00181).
+Does learning the features help? (SVM) SVM hand-crafted has 12.26 percentage points lower accuracy than SVM deep-features (95% interval -13.79 to -10.81; significant, Holm p = 4.58e-51).
+Does learning the features help? (forest) Random forest hand-crafted has 11.92 percentage points lower accuracy than Random forest deep-features (95% interval -13.62 to -10.22; significant, Holm p = 1.37e-37).
+Margin classifier or tree ensemble? (hand-crafted) SVM hand-crafted has 9.71 percentage points higher accuracy than Random forest hand-crafted (95% interval 8.04 to 11.45; significant, Holm p = 1.86e-24).
+Margin classifier or tree ensemble? (deep) SVM deep-features has 10.05 percentage points higher accuracy than Random forest deep-features (95% interval 8.73 to 11.49; significant, Holm p = 2.88e-44).
+Does pretraining help? ResNet18 fine-tuned has 1.87 percentage points higher accuracy than Custom CNN (ours) (95% interval 1.15 to 2.64; significant, Holm p = 1.83e-05).
+Does fine-tuning beat frozen features? ResNet18 fine-tuned has 1.49 percentage points higher accuracy than SVM deep-features (95% interval 0.72 to 2.21; significant, Holm p = 0.000679).
+Does the crop metadata help? Fusion image + crop has 0.43 percentage points higher accuracy than Logistic regression image-only (95% interval -0.09 to 0.98; not significant, Holm p = 0.309).
+Does text alignment match a plain classifier? Image-text alignment has 0.34 percentage points lower accuracy than Logistic regression image-only (95% interval -1.02 to 0.34; not significant, Holm p = 0.389).
+Small NumPy CNN vs custom CNN NumPy CNN from scratch (32x32) has 21.20 percentage points lower accuracy than Custom CNN (ours) (95% interval -22.90 to -19.41; significant, Holm p = 5.16e-98).
+Hardest classes (lowest mean F1 over all models): Tomato - Early blight, Potato - healthy, Apple - Cedar apple rust.
+Test images that no model classifies correctly: 0 of 2349 (0.0%).
+For ResNet18 fine-tuned: 10% of the errors are cross-crop errors; disease detection rate 1.000; 1 diseased leaves were called healthy.
+Zero-shot classification from text alone reached a mean top-1 accuracy of 0.010 (chance 0.059) and top-3 of 0.101 (chance 0.176) on classes never seen in training.

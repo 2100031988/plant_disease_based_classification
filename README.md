@@ -68,6 +68,10 @@ on identical images.
 * `results/predictions/` - test-set predictions and metrics of every model (columns `path`, `y_true`, `y_pred`)
 * `models/` - trained weights (custom CNN, fine-tuned ResNet18, NumPy CNN)
 
+## Report materials
+
+After running the full workflow, use [`report_materials.zip`](./report_materials.zip) as a report-writing pack. It contains a rubric-mapped guide, 28 selected figures with suggested captions, key result tables, generated findings, and a prediction-coverage check. It excludes the raw image dataset and model weights. The files are also available in [`report_materials/`](./report_materials/).
+
 ## Troubleshooting
 
 * **`python: command not found`** on macOS: use `python3`.

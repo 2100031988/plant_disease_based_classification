@@ -1,0 +1,4 @@
+model,parameters,weights (MB),forward cost (million MACs / image),activations (MB / image)
+NumPy CNN from scratch (32x32),"68,097",0.3,0.6,0.1
+"Custom CNN, PyTorch (256x256)","1,442,097",5.8,963.6,51.2
+ResNet18 (224x224),"11,185,233",44.7,"1,813.6",29.9

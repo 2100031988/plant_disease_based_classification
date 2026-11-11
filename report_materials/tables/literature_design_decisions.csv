@@ -1,0 +1,10 @@
+finding from the literature,decision in this project
+Accuracy on PlantVillage is saturated (99.35 - 99.96 %),"Report macro precision, recall and F1, per-class results and a statistical test, not accuracy alone"
+Strong class imbalance (tomato 43.4 % of images),"Stratified split, macro-averaged metrics, optional class-weighted loss"
+"Dataset bias and shortcut learning (Noyan, 2022)",Strong augmentation; state clearly that results do not transfer to field images
+Same leaf appears in several images,Note the possible train/test leakage as a limitation
+"Transfer learning beats training from scratch (Mohanty et al., 2016)",Include ResNet18 transfer learning as a benchmark
+Hand-crafted features were the pre-deep-learning approach,Include SVM and random forest on colour histogram and HOG features
+Transformers and CLIP generalise better to field images,Name as future work; keep text descriptions as class prototypes for later image-text matching
+Multimodal image-text data is the current direction (2026),"Build the multi-modal dataset (image, symptom text, metadata)"
+Deployment on phones matters for farmers,"Report parameters, operations and prediction time of every model"
