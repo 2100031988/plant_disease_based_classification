@@ -1,0 +1,11 @@
+item,value
+algorithm implemented from scratch,convolutional neural network (NumPy only)
+"lines of model code (layers, loss, optimiser)",about 135
+parameters,"68,097"
+numerical gradient check,max relative error 4.7e-10
+agreement with PyTorch (float64),max difference 6.7e-16
+same training trajectory as PyTorch (30 steps),max loss difference 6.6e-04
+automated tests passed,12 of 12
+test accuracy (32x32 images),0.7569
+test macro-F1,0.7101
+training time,44 s

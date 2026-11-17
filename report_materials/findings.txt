@@ -1,5 +1,5 @@
 Best model by macro-F1: ResNet18 fine-tuned (macro-F1 0.988, 95% interval 0.984-0.993; accuracy 0.988; MCC 0.986).
-Cochran's Q test: the models differ significantly (p = 0).
+Cochran's Q test: the models differ significantly (Q = 2224.9, df = 9, p < 0.001).
 39 of 45 pairwise differences are significant after Holm correction.
 The two best models (ResNet18 fine-tuned and SVM deep-features) are significantly different (Holm-adjusted p = 0.00181).
 Does learning the features help? (SVM) SVM hand-crafted has 12.26 percentage points lower accuracy than SVM deep-features (95% interval -13.79 to -10.81; significant, Holm p = 4.58e-51).
@@ -14,4 +14,5 @@ Small NumPy CNN vs custom CNN NumPy CNN from scratch (32x32) has 21.20 percentag
 Hardest classes (lowest mean F1 over all models): Tomato - Early blight, Potato - healthy, Apple - Cedar apple rust.
 Test images that no model classifies correctly: 0 of 2349 (0.0%).
 For ResNet18 fine-tuned: 10% of the errors are cross-crop errors; disease detection rate 1.000; 1 diseased leaves were called healthy.
-Zero-shot classification from text alone reached a mean top-1 accuracy of 0.010 (chance 0.059) and top-3 of 0.101 (chance 0.176) on classes never seen in training.
+Zero-shot classification from text alone reached a mean top-1 accuracy of 0.010 (chance 0.059) and top-3 of 0.101 (chance 0.176). Each held-out-class round excluded that class's images from aligner training; the model compared images with shared, class-level symptom descriptions using TF-IDF.
+Zero-shot limitation: descriptions are shared class-level symptom text, not image-specific; the held-out class description is a test-time candidate, but no images from that class train the aligner.

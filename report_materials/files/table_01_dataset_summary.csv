@@ -1,0 +1,14 @@
+property,value
+images,"23,483"
+classes,17
+crops,3
+modalities,"image, text, tabular"
+image size,256 x 256
+split (train/val/test),18786 / 2348 / 2349
+largest class,Tomato - Tomato Yellow Leaf Curl Virus (5357)
+smallest class,Potato - healthy (152)
+imbalance ratio,35.2
+normalised entropy,0.902
+text descriptions,17
+text vocabulary,143
+text-image similarity (Spearman rho),-0.065

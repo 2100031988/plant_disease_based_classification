@@ -141,10 +141,9 @@ Use the full tables in `tables/` for exact values and
 `findings.txt` for generated findings. The global Cochran test, pairwise
 McNemar tests, Holm adjustment, and bootstrap confidence intervals are
 described in `results_analysis.ipynb`; cite the associated statistical sources.
-The notebook's formatted Cochran output may display `p = 0` due to floating
-point underflow; do not report a probability of exactly zero. State a suitable
-bound (for example, `p < 0.001`) and include the test statistic and degrees of
-freedom.
+Report Cochran's result as `Q = 2224.9`, `df = 9`, `p < 0.001`; do not report a
+probability of exactly zero. The notebook formats very small p-values with a
+bound to avoid floating-point underflow being displayed as `p = 0`.
 
 ### Discussion, limitations, and conclusion
 

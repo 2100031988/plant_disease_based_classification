@@ -41,11 +41,16 @@ README.md
 | Order | Notebook | Needs | Approx. run time |
 |---|---|---|---|
 | 1 | `dataset_analysis.ipynb` | internet, git | 5 - 10 min |
-| 2 | `custom_cnn.ipynb` | notebook 1 | 20 - 40 min |
+| 2 | `custom_cnn.ipynb` | notebook 1 | about 2 hr 35 min (measured full run) |
 | 3 | `benchmark_methods.ipynb` | notebook 1 (notebook 2 optional, for the comparison) | 30 - 45 min |
 | 4 | `implementation_from_scratch.ipynb` | notebook 1 | 5 - 10 min |
 | 5 | `results_analysis.ipynb` | notebooks 2, 3 and 4 (the predictions they save) | 1 - 2 min |
 | - | `literature_review.ipynb` | nothing | seconds |
+
+The custom CNN estimate is based on the saved full run: 30 epochs at 256 x 256
+input resolution took 155.4 minutes on the machine used for that run. Actual
+runtime depends on hardware; `QUICK_TEST = True` is intended only as a short
+smoke test.
 
 Use `QUICK_TEST = True` for an initial smoke test where the setting is available.
 Before producing final results, set `QUICK_TEST = False` in `custom_cnn.ipynb`,
@@ -71,6 +76,8 @@ on identical images.
 ## Report materials
 
 After running the full workflow, use [`report_materials.zip`](./report_materials.zip) as a report-writing pack. It contains a rubric-mapped guide, 28 selected figures with suggested captions, key result tables, generated findings, and a prediction-coverage check. It excludes the raw image dataset and model weights. The files are also available in [`report_materials/`](./report_materials/).
+
+For a smaller, ready-to-select set, [`report_materials/files/`](./report_materials/files/) contains 12 figures and 4 summary tables together.
 
 ## Troubleshooting
 
