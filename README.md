@@ -9,12 +9,18 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/2100031988/plant_disease_based_classification/issues">Report a bug</a> |
-  <a href="https://github.com/2100031988/plant_disease_based_classification/issues">Request a feature</a> |
+  <a href="https://github.com/2100031988/plant_disease_based_classification/issues/new?template=bug_report.yml">Report a bug</a> |
+  <a href="https://github.com/2100031988/plant_disease_based_classification/issues/new?template=feature_request.yml">Request a feature</a> |
   <a href="https://github.com/2100031988/plant_disease_based_classification">View repository</a>
 </p>
 
 ---
+
+## Report a bug or request a feature
+
+Choose **Report a bug** or **Request a feature** above to open the matching form. Sign in
+to GitHub first; GitHub requires an account to submit an issue. Complete the form and
+select **Submit new issue**.
 
 ## Project overview
 
